@@ -5,6 +5,9 @@ import {
   ActionRowBuilder,
   type Message,
 } from "discord.js";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 // Check if the URL is included
 function containsURL(input: string): boolean {
@@ -20,6 +23,9 @@ export default {
   name: Events.MessageCreate,
   async execute(message: Message): Promise<void> {
     if (message.author.bot || !message.inGuild()) return;
+
+    const channels = process.env.CHANNEL_ID?.split(",");
+    if (!channels?.includes(message.channel.id)) return;
 
     if (containsURL(message.content)) {
       const content = message.content;
