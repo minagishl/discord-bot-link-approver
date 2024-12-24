@@ -1,5 +1,6 @@
-# Discord Bot Message Preview
-This repository shows a preview when you attach a link to a previous message
+# Discord Bot Link Approver
+
+This repository will require approval for submissions containing links
 
 ## Features
 
@@ -20,8 +21,8 @@ This repository shows a preview when you attach a link to a previous message
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/minagishl/discord-bot-message-preview.git
-   cd discord-bot-message-preview
+   git clone https://github.com/minagishl/discord-bot-link-approver.git
+   cd discord-bot-link-approver
    ```
 
 2. Install dependencies:
@@ -82,4 +83,4 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 
 ---
 
-For more information, visit the [repository](https://github.com/minagishl/discord-bot-message-preview).
+For more information, visit the [repository](https://github.com/minagishl/discord-bot-link-approver).

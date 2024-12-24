@@ -1,7 +1,7 @@
 {
-  "name": "discord-bot-message-preview",
+  "name": "discord-bot-link-approver",
   "version": "0.1.0",
-  "description": "A bot that sends a preview when a message link is sent",
+  "description": "Have posts that contain links get confirmation before they are posted.",
   "license": "MIT",
   "author": "minagishl",
   "type": "commonjs",
