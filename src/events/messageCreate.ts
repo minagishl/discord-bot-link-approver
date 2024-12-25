@@ -13,7 +13,7 @@ dotenv.config();
 function containsURL(input: string): boolean {
   // URL regular expression
   const urlRegex =
-    /https?:\/\/(?:www\.|[a-zA-Z0-9-]+\.)[a-zA-Z0-9.-]+(?:\/[\w\-._~:/?#[\]@!$&'()*+,;=]*)?/g;
+    /https?:\/\/(?:www\.|[a-zA-Z0-9-]+\.)[a-zA-Z0-9.-]+(?<!discord\.com)(?:\/[\w\-._~:/?#[\]@!$&'()*+,;=]*)?/g;
 
   // Determine if a regular expression is matched
   return urlRegex.test(input);
