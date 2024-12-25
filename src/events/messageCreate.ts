@@ -28,6 +28,7 @@ export default {
     if (!channels?.includes(message.channel.id)) return;
 
     if (containsURL(message.content)) {
+      if (message.content.startsWith("!")) return;
       const content = message.content;
 
       const ok = new ButtonBuilder()
